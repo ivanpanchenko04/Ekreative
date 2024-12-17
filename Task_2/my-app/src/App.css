@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Medium.woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-SemiBold.woff2");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("fonts/Manrope-SemiBold.woff2");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+:root {
+    --white: #fff;
+    --royal-blue: #2405f2;
+    --dark-blue: #282938;
+    --grey: #f4f6fc;
+    --yellow: #fcd980;
+    --tint-blue: #1c1e53;
+    --accent: #eef4fa;
+    --yellow-hover: #fde4a6;
+    --dark-blue-hover: #535460;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Manrope", sans-serif;
+    --third-family: "Gilroy", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scrollbar-color: var(--tint-blue) var(--white);
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.btn {
+    display: inline-block;
+    font-family: var(--second-family);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.btn-stroke {
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    padding: 16px 48px;
+    color: var(--white);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-stroke:hover {
+    background-color: rgba(244, 246, 252, 0.1);
+}
+
+@media (max-width: 920px) {
+    .btn-stroke {
+        padding: 16px 30px;
+    }
+}
+
+.btn-fill {
+    padding: 16px 56px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-fill_yellow {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    align-self: center;
+}
+
+.btn-fill_yellow:hover {
+    background-color: var(--yellow-hover);
+}
+
+.btn-fill_dark-blue {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    align-self: center;
+}
+
+.btn-fill_dark-blue:hover {
+    background-color: var(--dark-blue-hover);
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.title-main {
+    font-size: 54px;
+    line-height: 74px;
+}
+
+@media (max-width: 768px) {
+    .title-main {
+        font-size: 46px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title-main {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.title_2 {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+@media (max-width: 768px) {
+    .title_2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title_2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.title_3 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@media (max-width: 375px) {
+    .title_3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+.title_4 {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.title_5 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@media (max-width: 768px) {
+    .title_5 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title_5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.title_6 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+@media (max-width: 768px) {
+    .title_6 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+.text {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+@media (max-width: 425px) {
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.text_white {
+    color: var(--white);
+}
+
+.text_dark-blue {
+    color: var(--dark-blue);
+}
+
+.title_white,
+.title-main_white {
+    color: var(--white);
+}
+
+.title_dark-blue,
+.title-main_dark-blue {
+    color: var(--dark-blue);
+}
+
+.title_royal-blue {
+    color: var(--royal-blue);
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: -40px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link:hover::after {
+    transform: translateX(10px);
+}
+
+.link_white {
+    color: var(--white);
+}
+
+.link_white::after {
+    background-image: url(./img/icons/arrow-white.svg);
+}
+
+.link_royal-blue {
+    color: var(--royal-blue);
+}
+
+.link_royal-blue::after {
+    background-image: url(./img/icons/arrow-royal-blue.svg);
+}
+
+.link_dark-blue {
+    color: var(--dark-blue);
+}
+
+.link_dark-blue::after {
+    background-image: url(./img/icons/arrow-dark-blue.svg);
+}

@@ -1,0 +1,257 @@
+.footer__top {
+    padding: 96px 0;
+    background-color: var(--tint-blue);
+}
+
+@media (max-width: 500px) {
+    .footer__top {
+        padding: 40px 0;
+    }
+}
+
+.footer__top__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .footer__top__container {
+        flex-direction: column;
+    }
+}
+
+.footer__wrapper {
+    margin: 0 20px 0 0;
+}
+
+@media (max-width: 500px) {
+    .footer__wrapper {
+        margin: 0 0 20px 0;
+    }
+}
+
+.footer__wrapper-img {
+    width: 200px;
+}
+
+.footer__wrapper-text {
+    margin: 24px 0 0 0;
+    max-width: 480px;
+}
+
+.footer__talk-title {
+    margin: 0 0 14px 0;
+}
+
+.footer__talk-text {
+    max-width: 400px;
+    margin: 0 0 24px 0;
+}
+
+.footer__talk-list {
+    display: flex;
+}
+
+.footer__talk-item:not(:last-child) {
+    margin: 0 26px 0 0;
+}
+
+.footer__talk-img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer__contact {
+    position: absolute;
+    left: 0;
+    bottom: -96px;
+    padding: 18px 38px;
+    background-color: var(--yellow);
+}
+
+@media (max-width: 500px) {
+    .footer__contact {
+        bottom: 0;
+        width: 100%;
+        position: relative;
+        padding: 16px 26px;
+    }
+}
+
+.footer__contact-list {
+    display: flex;
+}
+
+@media (max-width: 375px) {
+    .footer__contact-list {
+        flex-direction: column;
+    }
+}
+
+.footer__contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact-item:not(:last-child) {
+    margin: 0 30px 0 0;
+}
+
+.footer__contact-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+.footer__bottom {
+    padding: 32px 0;
+    background-color: var(--white);
+}
+
+@media (max-width: 786px) {
+    .footer__bottom {
+        padding: 26px 0;
+    }
+}
+
+.footer__bottom__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer__bottom__container {
+        flex-direction: column;
+    }
+}
+
+.footer__copyright {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+@media (max-width: 768px) {
+    .footer__copyright {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__copyright {
+        margin: 0 0 10px 0;
+    }
+}
+
+.footer__list {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__item:not(:last-child) {
+    margin: 0 32px 0 0;
+}
+
+@media (max-width: 500px) {
+    .footer__item:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-blue);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+    color: var(--royal-blue);
+}
+
+.nav__list {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav__item:not(:last-child) {
+        margin: 0 32px 0 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+    .nav__item:not(:last-child) {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__item:not(:last-child) {
+        margin: 0 0 20px 0;
+    }
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbbbcb;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__link:active {
+    color: var(--white);
+}
+
+.nav.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50%;
+        padding: 40px 15px;
+        transform: translateX(-110%);
+        background-color: var(--tint-blue);
+        box-shadow: 14px 0px 10px 0px var(--tint-blue);
+        transition: transform 0.3s ease-in-out;
+        z-index: 3;
+    }
+}
+
+.stop-scroll {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(40, 41, 56, 0.8);
+}
